@@ -1,4 +1,5 @@
 export const getOneDeed = async () => {
+  if (!process.env.NEXT_PUBLIC_API_DOMAIN) return { deed: "placeholder text" };
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/deed`);
   const responseJson = await response.json();
 

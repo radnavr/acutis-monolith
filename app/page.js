@@ -6,10 +6,8 @@ const App = async () => {
 
   return (
     <main>
-      <div className="content-container">
-        <img src={imageObj.imgUrl} />
-        <p>Carlo Acutis {deedObj.deed}</p>
-      </div>
+      <img src={imageObj.imgUrl} />
+      <p>Carlo Acutis {deedObj.deed}</p>
     </main>
   );
 };
